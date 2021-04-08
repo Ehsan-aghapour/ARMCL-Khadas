@@ -1,0 +1,1 @@
+taskset -a $3 /bin/time ./$1 --threads=$4 --target=$2 --data=/data/local/Work/ARMCL/assets_alexnet/ --image=/data/local/Work/ARMCL/assets_alexnet/go_kart.ppm --labels=/data/local/Work/ARMCL/assets_alexnet/labels.txt

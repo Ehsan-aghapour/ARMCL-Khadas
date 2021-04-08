@@ -1,0 +1,115 @@
+
+examples/graph_alexnet
+
+Threads : 1
+Target : CL
+Data type : F32
+Data layout : NHWC
+Tuner enabled? : false
+Cache enabled? : true
+Tuner mode : Normal
+Tuner file : 
+MLGO file : 
+Fast math enabled? : false
+
+*********force target is :CL
+start running graph ...
+Cost:0.108827
+input_time:0.0017425
+task_time:0.00535569
+output_time:0.100399
+total_time:0.107497
+
+Test passed
+
+examples/graph_googlenet
+
+Threads : 1
+Target : CL
+Data type : F32
+Data layout : NHWC
+Tuner enabled? : false
+Cache enabled? : true
+Tuner mode : Normal
+Tuner file : 
+MLGO file : 
+Fast math enabled? : false
+
+*********force target is :CL
+start running graph ...
+Cost:0.122218
+input_time:0.00142973
+task_time:0.0255565
+output_time:0.093989
+total_time:0.120975
+
+Test passed
+
+examples/graph_mobilenet
+
+Threads : 1
+Target : CL
+Data type : F32
+Data layout : NHWC
+Tuner enabled? : false
+Cache enabled? : true
+Tuner mode : Normal
+Tuner file : 
+MLGO file : 
+Fast math enabled? : false
+
+*********force target is :CL
+start running graph ...
+Cost:0.0678315
+input_time:0.00129004
+task_time:0.0174912
+output_time:0.0481063
+total_time:0.0668875
+
+Test passed
+
+examples/graph_squeezenet
+
+Threads : 1
+Target : CL
+Data type : F32
+Data layout : NHWC
+Tuner enabled? : false
+Cache enabled? : true
+Tuner mode : Normal
+Tuner file : 
+MLGO file : 
+Fast math enabled? : false
+
+*********force target is :CL
+start running graph ...
+Cost:0.0806939
+input_time:0.00135099
+task_time:0.00705738
+output_time:0.0712853
+total_time:0.0796937
+
+Test passed
+
+examples/graph_resnet50
+
+Threads : 1
+Target : CL
+Data type : F32
+Data layout : NHWC
+Tuner enabled? : false
+Cache enabled? : true
+Tuner mode : Normal
+Tuner file : 
+MLGO file : 
+Fast math enabled? : false
+
+*********force target is :CL
+start running graph ...
+Cost:0.355272
+input_time:0.00104263
+task_time:0.0827256
+output_time:0.270711
+total_time:0.354479
+
+Test passed
