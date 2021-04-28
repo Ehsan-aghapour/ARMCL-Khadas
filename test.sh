@@ -4,8 +4,9 @@ export LD_LIBRARY_PATH=/data/data/com.termux/files/home/ARMCL-Khadas/lib/
 chmod +x $1
 
 p="/data/data/com.termux/files/home/ARMCL-Khadas"
+#p=".."
 
-_dt="$p/compute_library_alexnet"
+_dt="$p/compute_library_alexnet/"
 _img="$p/one_image/"
 _lbl="$p/compute_library_alexnet/labels.txt"
 
@@ -28,4 +29,4 @@ echo $dt
 echo $lbl
 
 
-$1 --target=$2 $dt $img $lbl  
+$1 --target=$2 $dt $img $lbl 
