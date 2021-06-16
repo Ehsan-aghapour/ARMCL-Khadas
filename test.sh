@@ -90,4 +90,4 @@ fi
 #echo $lbl
 
 
-$1 --threads=4  --target=$2 $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 
+$1 --threads=2  --target=$2 $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 

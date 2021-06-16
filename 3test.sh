@@ -89,5 +89,5 @@ fi
 #echo $dt
 #echo $lbl
 
-
-$1 --threads=4  --threads2=2 --order=$2 $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 --partition_point2=${10} --order=${11}
+#gdbserver :539 
+$1 --threads=2  --threads2=1  $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 --partition_point2=${10} --order=${11}
