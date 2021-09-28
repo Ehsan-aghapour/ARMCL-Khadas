@@ -90,4 +90,4 @@ fi
 #echo $lbl
 
 #gdbserver :539 
-$1 --threads=2  --threads2=1  $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 --partition_point2=${10} --order=${11}
+$1 --threads=4  --threads2=2  --target=$2 $dt $img $lbl $n --save=$7 --annotate=$8 --partition_point=$9 --partition_point2=${10} --order=${11} --layer_time=${12} ${13} ${14} ${15} ${16} ${17} 
