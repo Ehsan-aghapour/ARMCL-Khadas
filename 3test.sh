@@ -1,9 +1,28 @@
 
-echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-echo performance > /sys/devices/system/cpu/cpufreq/policy2/scaling_governor
 
-echo 4 > /sys/class/mpgpu/max_freq
-echo 4 > /sys/class/mpgpu/min_freq
+
+
+######## for Khadas AOSP(CPU) ##############
+#echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+#echo performance > /sys/devices/system/cpu/cpufreq/policy2/scaling_governor
+
+######## for Google AOSP(CPU) ##############
+echo userspace > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+echo userspace > /sys/devices/system/cpu/cpufreq/policy2/scaling_governor
+echo 1800000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_setspeed
+echo 2208000 > /sys/devices/system/cpu/cpufreq/policy2/scaling_setspeed
+
+
+######## for Khadas AOSP(GPU) ##############
+#echo 4 > /sys/class/mpgpu/max_freq
+#echo 4 > /sys/class/mpgpu/min_freq
+
+######## for Google AOSP(GPU) #########
+echo userspace > /sys/class/devfreq/ffe40000.gpu/governor
+cat /sys/class/devfreq/ffe40000.gpu/governor
+echo 799999987 > /sys/class/devfreq/ffe40000.gpu/userspace/set_freq
+cat /sys/class/devfreq/ffe4000.gpu/cur_freq
+
 ##echo "Current GPU min freq:"
 ##cat /sys/class/mpgpu/min_freq
 ##echo "Current GPU ferq:"
