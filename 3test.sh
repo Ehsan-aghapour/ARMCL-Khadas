@@ -21,7 +21,7 @@ echo 2208000 > /sys/devices/system/cpu/cpufreq/policy2/scaling_setspeed
 echo userspace > /sys/class/devfreq/ffe40000.gpu/governor
 cat /sys/class/devfreq/ffe40000.gpu/governor
 echo 799999987 > /sys/class/devfreq/ffe40000.gpu/userspace/set_freq
-cat /sys/class/devfreq/ffe4000.gpu/cur_freq
+cat /sys/class/devfreq/ffe40000.gpu/cur_freq
 
 ##echo "Current GPU min freq:"
 ##cat /sys/class/mpgpu/min_freq
@@ -32,7 +32,7 @@ cat /sys/class/devfreq/ffe4000.gpu/cur_freq
 sleep 2
 
 
-export LD_LIBRARY_PATH=/data/data/com.termux/files/home/ARMCL-Khadas/lib/
+export LD_LIBRARY_PATH=/data/data/com.termux/files/home/ARMCL-Khadas/lib64/
 
 chmod +x $1
 
