@@ -3,12 +3,12 @@
 
 
 ######## for Khadas AOSP(CPU) ##############
-##echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-##echo performance > /sys/devices/system/cpu/cpufreq/policy2/scaling_governor
+echo performance > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+echo performance > /sys/devices/system/cpu/cpufreq/policy2/scaling_governor
 #big:
-##echo 2208000 > /sys/devices/system/cpu/cpufreq/policy2/scaling_max_freq
+echo 2208000 > /sys/devices/system/cpu/cpufreq/policy2/scaling_max_freq
 #little:
-##echo 1800000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+echo 1800000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 
 ######## for Google AOSP(CPU) ##############
 #echo userspace > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
@@ -36,11 +36,14 @@ echo 4 > /sys/class/mpgpu/min_freq
 sleep 2
 
 
-export LD_LIBRARY_PATH=/data/data/com.termux/files/home/ARMCL-Khadas/lib/
+p="/data/data/com.termux/files/home/ARMCL-Khadas"
+p="/data/local/work_dir"
 
+export LD_LIBRARY_PATH=/data/data/com.termux/files/home/ARMCL-Khadas/lib/
+export LD_LIBRARY_PATH=/data/local/work_dir/lib/
 chmod +x $1
 
-p="/data/data/com.termux/files/home/ARMCL-Khadas"
+
 #p=".."
 
 #_dt="$p/compute_library_alexnet/"
